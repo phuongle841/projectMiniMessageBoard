@@ -15,5 +15,5 @@ app.use("/", indexRouter);
 
 const PORT = 3000;
 app.listen(PORT, () => {
-  console.log("this is truly our jujutsu kain");
+  console.log("listen at port:", PORT);
 });
