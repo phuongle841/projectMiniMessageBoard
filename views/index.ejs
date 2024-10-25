@@ -1,0 +1,16 @@
+<html>
+  <header>
+    <title>index Page</title>
+  </header>
+  <body>
+    <h1>pass para to 3 layer of function 😭</h1>
+    <body>
+      <ul>
+        <% messages.forEach((message) => { %> <%-
+        include('user',{user:message.user,message:message.text,date:message.added});
+        %> <% }); %>
+      </ul>
+      <a href="/new">Add message</a>
+    </body>
+  </body>
+</html>
