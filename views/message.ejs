@@ -1,1 +1,14 @@
-<li><%= text %></li>
+<html>
+  <header>
+    <title>Message page</title>
+  </header>
+  <body>
+    <h1>This message belong to</h1>
+    <%-
+    include('messageDisplay',{id:selectedMessage.id,user:selectedMessage.user,message:selectedMessage.text,date:selectedMessage.added});
+    %>
+    <body>
+      <a href="/">Home</a>
+    </body>
+  </body>
+</html>
